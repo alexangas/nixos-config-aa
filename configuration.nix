@@ -90,7 +90,6 @@
       bitwarden
       brave
       firefox
-      git
     ];
   };
 
@@ -100,7 +99,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    
+    git
+    gh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
